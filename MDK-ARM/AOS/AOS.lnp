@@ -1,0 +1,5 @@
+--cpu Cortex-M4 ".\aos\main.o" ".\aos\stm32f4xx_it.o" ".\aos\system_stm32f4xx.o" ".\aos\stm32f4xx_rcc.o" ".\aos\misc.o" ".\aos\stm32f4xx_gpio.o" ".\aos\stm32f4xx_syscfg.o" ".\aos\stm32f4xx_exti.o" ".\aos\stm32f4xx_flash.o" ".\aos\stm32f4xx_fsmc.o" ".\aos\stm32f4xx_sdio.o" ".\aos\stm32f4xx_dma.o" ".\aos\stm32f4xx_spi.o" ".\aos\stm32f4xx_i2c.o" ".\aos\stm32f4xx_usart.o" ".\aos\stm32f4xx_rtc.o" ".\aos\stm32f4xx_pwr.o" ".\aos\startup_stm32f4xx.o" ".\aos\asciilib.o" ".\aos\ili9481.o" ".\aos\lcd.o" ".\aos\stm324xg_eval.o" ".\aos\stm324xg_eval_sdio_sd.o" ".\aos\diskio.o" ".\aos\ff.o" ".\aos\sduser.o" ".\aos\fattime.o" ".\aos\ccsbcs.o" ".\aos\usercontrols_button.o" ".\aos\usercontrols_checkbox.o" ".\aos\usercontrols_listbox.o" ".\aos\usercontrols_messagebox.o" ".\aos\usercontrols_radiobutton.o" ".\aos\usercontrols_valueregulator.o" ".\aos\flash.o" ".\aos\touchpanel.o" ".\aos\core.o" ".\aos\formmanager.o" ".\aos\pwr.o" ".\aos\rtc_time.o" 
+--library_type=microlib --strict --scatter ".\AOS\AOS.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\AOS\AOS.map" -o .\AOS\AOS.axf
